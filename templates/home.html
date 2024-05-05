@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourismart</title>
+   
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wghts@200;300;400;500;600;700;800;900&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        h1,
+        h2 {
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex_space {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            border: none;
+            background: none;
+            outline: none;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .primary-btn {
+            padding: 15px 40px;
+            background: #7fc142;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+
+        .secondary-btn {
+            padding: 15px 40px;
+            background: none;
+            border: 2px solid white;
+            font-weight: bold;
+            color: white;
+        }
+
+        .container {
+            max-width: 85%;
+            margin: auto;
+        }
+
+        .container img{
+            height: 85vh;
+            opacity: 0.9;
+        }
+
+        .logo h3 {
+            display: flex;
+            margin: 0px 5px;
+            padding-bottom: 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .logo a {
+            display: flex;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .logo a img{
+            height: 50px;
+            width:  50px;
+            padding: 0;
+            margin: 5px 15px;
+        }
+
+        /*header*/
+        header {
+            height: 10vh;
+            line-height: 10vh;
+            padding: 0 20px;
+            background-color: #cc9966;
+        }
+
+        header img {
+            margin: 10px 0;
+            width: 50px;
+        }
+
+        header ul {
+            display: inline-block;
+        }
+
+        header ul li {
+            display: inline-block;
+            text-transform: uppercase;
+        }
+
+        header ul li a {
+            color: #000;
+            margin: 0 10px;
+            transition: 0.5s;
+        }
+
+        header ul li a:hover {
+            color: #3f5f20;
+            border-bottom: 2px solid #3f5f20;
+        }
+
+        header i {
+            margin: 0 20px;
+        }
+
+        header button {
+            padding: 13px 40px;
+        }
+
+        header .navlinks span {
+            display: none;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+
+        .bottom-left {
+            position: absolute;
+            bottom: 50px;
+            left: 16px;
+        }
+
+        .bottom-left h1,
+        p {
+            text-align: left;
+        }
+
+        .bottom-left button {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        .bottom-left h1{
+           color: rgb(255, 255, 255);
+           border: 2px solid white;
+           padding: 10px 10px;
+           margin: 0px 0px 20px 0px;
+           width: 400px;
+           text-align: center;
+           background-color: rgb(7, 96, 143);
+           opacity: 0.7;
+           border-radius: 25%;
+        }
+
+        .bottom-left p{
+            color: black;
+            margin-left: 20px;
+            background:rgba(255,255,255,0.2)
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <a href="/"><img src="/static/image/logo.png" alt=""><h3>Meadow</h3></a>
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/register">Register</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+   
+    <section class="home">
+        <div class="container">
+            <img src="/static/image/main.jpg" alt="Snow" style="width:100%;">
+            <div class="bottom-left">
+                <h1 style="font-size: 30px; font-weight: bolder;">Spend Your Holiday</h1>
+                <p style="font-weight:bold; font-size:18px;">You are welcome to relax and unwind in a quiet and elegant setting in the popular resort  <br>and enjoy a genuine experience of leisure, pleasure, gastronomy and wellness within the premises of the resort</p>
+                <div class="flex">
+                    <a href="/about"><button class="primary-btn">READ MORE</button></a>
+                    {% comment %} <a href="/contact"><button class="primary-btn">CONTACT US</button></a> {% endcomment %}
+                </div>
+            </div>
+        </div>    
+    </section>
+   
+</body>
+</html>
